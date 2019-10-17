@@ -1,0 +1,183 @@
+
+%\documentclass{elsarticle}
+%\documentclass[twocolumn]{elsarticle}
+%\documentclass{IEEEtran}
+
+
+
+\documentclass[journal] {article}
+
+
+%\usepackage{graphics}
+\usepackage{graphicx}
+
+
+\begin{document}
+
+
+\title{demo document}
+\maketitle
+
+
+\section{Equations}
+
+This is equation section. $ Studentcount = \mu{ni} + \sum\frac{Ak}{Bk}$ is an example for inline equation. $ Student_{count} = \mu{ni} + \sum\frac{A_k}{B^k}$ is another example. Equation-\ref{eq1} is an example for numbered equation.
+
+\begin{equation}
+	a=10
+	b=90
+\end{equation}
+
+
+	\[
+	a=09+89-67
+\]
+
+
+\begin{equation}
+\frac{\sum\frac{a}{\varpi b}}{b-90}
+\label{eq1}
+\end{equation}
+
+
+
+
+In the content based analysis, the amount of  $T$ contained by $R$ is quantified. The respective contents of $T$ present in each of the partitioned zones are symbolized by $l^s$, $l^a$, $l^p$, $l^{ua}$ and $l^{us}$ as listed above.  The relative contents $\frac{l^s}{l^t}$, $\frac{l^a}{l^t}$, $\frac{l^p}{l^t}$, $\frac{l^{ua}}{l^t}$ and $\frac{l^{us}}{l^t}$ are defined. They are multiplied by suitable weightage factors, which are so chosen to properly project the relative contents. The set of weightage factors ($w_a$,$w_b$,$w_c$,$w_d$,$w_e$) used for content based computations are given in table-\ref{PSD-weights}. The expression for similarity due to the content component in the $k^{th}$ feature is given by
+
+
+\begin{equation}\label{SC}
+		S_c(R_k, T_k) = \frac{l^s}{l^t}w_a + \frac{l^a}{l^t}w_b + \frac{l^p}{l^t}w_c + \frac{l^{ua}}{l^t}w_d + \frac{l^{us}}{l^t}w_e 
+	\end{equation} 
+	
+	The expression for similarity due to the content component in the $k^{th}$ feature is given by:
+
+
+
+\begin{equation}\label{DC}
+		D_c(R_k, T_k) = 1 - S_c(R_k, T_k) 
+	\end{equation}
+
+
+
+\section{Tables}
+
+This section shows the syntax for inserting tables.
+
+The different examples are as follows.
+
+
+\begin{table}[htbp]
+	\centering
+		\begin{tabular}{c|c|c|c|}
+			val1 & val2 & val3 & val4 \\
+			10 & 10 & 30 & 40\\
+		\end{tabular}
+		\caption{This is a demo table1} 
+\end{table}
+
+
+
+
+\begin{table}[htbp]
+	\centering
+	\caption{This is a demo table2}
+		\begin{tabular}{|c|c|c|c|} \hline
+			val1 & val2 & val3 & val4 \\ \hline
+			10 & 10 & 30 & 40\\ \hline
+		\end{tabular}
+		 
+		\label{table1}
+\end{table}
+
+
+\begin{table}[t]
+\caption{Interpretation of the values in feature-interaction table(FIT). FIT data $Dj_i$ indicates data from row-j and column-i}
+			\centering	 
+				{\begin{tabular} {| p{0.4in} | p{0.6in} | p{1in} | p{1in} | p{0.7in} | }\hline
+				  %&\multicolumn{2}{|c|}{affiliation distance} \\ \cline{2-3}
+				& &\multicolumn{3}{|c|}{Common Heading} \\ \cline{3-5}
+				FIT data & Feature interaction value & Inferred from previously observed features' values &Inferred from present feature value & Net/overall affiliation\\ \hline
+				D1i & 0& healthy & healthy & healthy\\ %\hline
+				D4i & 1&PD & PD & PD\\ \hline
+				\end{tabular}
+			}
+		\label{table2}
+	\end{table}
+
+
+
+
+\begin{table}[htb]
+\caption{Proposed Range of distribution zones for different distribution patterns. $\mu_{ni}$ represents mean value of $i^{th}$ feature in distribution of healthy samples, $\sigma_{ni}$ represents the standard deviation. $\mu_{ai}$ and $\sigma_{ai}$  represent the same in PD samples.}
+	\centering
+		\begin{tabular} {c c c c c c }\hline
+				 			
+				Distribution  & Safe & Acceptable & Permissible & Unacceptable & Unsafe\\ 
+				Pattern & (Wi=00.1) & (Wi=0.1) & (Wi=1) & (Wi=10) & (Wi=100)\\ \hline
+				 & $\leq(\mu_{ni} - 2\sigma_{ni})$ & $(\mu_{ni} - 2\sigma_{ni})$ & $(\mu_{ni} - \sigma_{ni})$ & $(\mu_{ni} + \sigma_{ni})$ & $\geq (\mu_{ni} + 2\sigma_{ni})$ \\
+				1 &               & to           & to          & to          & \\
+				 &                & $(\mu_{ni} - \sigma_{ni})$  & $(\mu_{ni} + \sigma_{ni})$ & $(\mu_{ni} + 2\sigma_{ni})$ & \\ \hline
+				
+  &                & $\leq min_{ai}$ & $ min_{ai}$ & $\geq max_{ai}$ &  \\
+2 &        -       &                  &to           &                  & - \\
+	&                &                 & $max_{ai}$ &                   & \\ 
+
+	 &   & $\geq max_{ai}$  &  $max_{ai}$      & $\leq min_{ni} $ & \\ \hline 
+			
+		\end{tabular}
+	
+	\label{table3}
+\end{table}
+	
+		
+		
+		
+		
+		
+		
+		\begin{table}
+\caption{Regions of partitions and corresponding weightage factors.}
+\centering	 
+				{\begin{tabular} {c c c c }\hline
+				  %&\multicolumn{2}{|c|}{affiliation distance} \\ \cline{2-3}
+				& Region of & \multicolumn{2}{c} {Weightage factors for analysis based on} \\ \cline{3-4}
+				 & $T^k$ = ($\underline{T}_k$,$\overline{T}_k$) & Position & Content \\ \hline
+				Case 1 & $<Z_s$(pattern 1) or  & $W_1 = 0.1$ & $W_a = 1.0$   \\ %\hline
+					        &  $>Z_s$(pattern 4)      &              &               \\      
+			Case 2 & [$Z_s$ , $Z_a$](patterns 1 and 2) or    & $W_2 = 0.3$ & $W_b = 0.8$   \\%\hline
+				        & [$Z_a$ , $Z_s$](patterns 3 and 4)      &              &               \\      \hline     
+		\end{tabular}
+			}
+			
+			\label{table4}
+	\end{table}
+
+		
+		
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
+
+
+
+

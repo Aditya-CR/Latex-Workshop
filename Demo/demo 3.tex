@@ -1,0 +1,208 @@
+
+%\documentclass[twocolumn]{elsarticle}
+\documentclass{IEEEtran}
+
+
+%\usepackage{graphics}
+\usepackage{graphicx}
+
+
+\begin{document}
+
+
+\title{demo document}
+\maketitle
+
+
+
+\section{Abstract}
+An abstract is a brief summary of a research article, thesis, review, conference proceeding, or any in-depth analysis of a particular subject and is often used to help the reader quickly ascertain the paper's purpose.[1] When used, an abstract always appears at the beginning of a manuscript or typescript, acting as the point-of-entry for any given academic paper or patent application. Abstracting and indexing services for various academic disciplines are aimed at compiling a body of literature for that particular subject.
+
+
+\section{Introduction}
+In an essay, article, or book, an introduction (also known as a prolegomenon) is a beginning section which states the purpose and goals of the following writing. This is generally followed by the body and conclusion.
+
+The introduction typically describes the scope of the document and gives the brief explanation or summary of the document. It may also explain certain elements that are important to the essay if explanations are not part of the main text. The readers can have an idea about the following text before they actually start reading it.
+
+ln technical writing, the introduction typically includes one or more standard subsections: abstract or summary, preface, acknowledgments, and foreword. Alternatively, the section labeled introduction itself may be a brief section found side-by-side with abstract, foreword, etc. (rather than containing them). In this case the set of sections that come before the body of the book are known as the front matter. When the book is divided into numbered chapters, by convention the introduction and any other front-matter sections are unnumbered and precede chapter 1.
+
+Keeping the concept of the introduction the same, different documents have different styles to introduce the written text. For example, the introduction of a Functional Specification consists of information that the whole document is yet to explain. If a Userguide is written, the introduction is about the product. In a report, the introduction gives a summary about the report contents.
+
+\subsection{Equations}
+
+This is equation section. $ Studentcount = \mu{ni} + \sum\frac{Ak}{Bk}$ is an example for inline equation. $ Student_{count} = \mu{ni} + \sum\frac{A_k}{B^k}$ is another example. Equation-\ref{eq1} is an example for numbered equation.
+
+\begin{equation}
+	a=10
+	b=90
+\end{equation}
+
+
+	\[
+	a=09+89-67
+\]
+
+
+\begin{equation}
+\frac{\sum\frac{a}{\varpi b}}{b-90}
+\label{eq1}
+\end{equation}
+
+
+
+
+In the content based analysis, the amount of  $T$ contained by $R$ is quantified. The respective contents of $T$ present in each of the partitioned zones are symbolized by $l^s$, $l^a$, $l^p$, $l^{ua}$ and $l^{us}$ as listed above.  The relative contents $\frac{l^s}{l^t}$, $\frac{l^a}{l^t}$, $\frac{l^p}{l^t}$, $\frac{l^{ua}}{l^t}$ and $\frac{l^{us}}{l^t}$ are defined. They are multiplied by suitable weightage factors, which are so chosen to properly project the relative contents. The set of weightage factors ($w_a$,$w_b$,$w_c$,$w_d$,$w_e$) used for content based computations are given in table-\ref{PSD-weights}. The expression for similarity due to the content component in the $k^{th}$ feature is given by
+
+
+\begin{equation}\label{SC}
+		S_c(R_k, T_k) = \frac{l^s}{l^t}w_a + \frac{l^a}{l^t}w_b + \frac{l^p}{l^t}w_c + \frac{l^{ua}}{l^t}w_d + \frac{l^{us}}{l^t}w_e 
+	\end{equation} 
+	
+	The expression for similarity due to the content component in the $k^{th}$ feature is given by:
+
+
+
+\begin{equation}\label{DC}
+		D_c(R_k, T_k) = 1 - S_c(R_k, T_k) 
+	\end{equation}
+
+
+
+\section{Tables}
+
+
+A table of contents usually includes the titles or descriptions of first-level headings (chapters in longer works), and often includes second-level headings (sections or A-heads) within the chapters as well, and occasionally even includes third-level headings (subsections or B-heads) within the sections as well. The depth of detail in tables of contents depends on the length of the work, with longer works having less. Formal reports (ten or more pages and being too long to put into a memo or letter) also have a table of contents. Within an English-language book, the table of contents usually appears after the title page, copyright notices, and, in technical journals, the abstract; and before any lists of tables or figures, the foreword, and the preface.
+
+
+\begin{table*}[h]
+\caption{Interpretation of the values in feature-interaction table(FIT). FIT data $Dj_i$ indicates data from row-j and column-i}
+			\centering	 
+				{\begin{tabular} {| p{0.4in} | p{0.6in} | p{1in} | p{1in} | p{0.7in} | }\hline
+				  %&\multicolumn{2}{|c|}{affiliation distance} \\ \cline{2-3}
+				& &\multicolumn{3}{|c|}{Common Heading} \\ \cline{3-5}
+				FIT data & Feature interaction value & Inferred from previously observed features' values &Inferred from present feature value & Net/overall affiliation\\ \hline
+				D1i & 0& healthy & healthy & healthy\\ %\hline
+				D4i & 1&PD & PD & PD\\ \hline
+				\end{tabular}
+			}
+		\label{table2}
+	\end{table*}
+
+
+
+
+
+Printed tables of contents indicate page numbers where each part starts, while digital ones offer links to go to each part. The format and location of the page numbers is a matter of style for the publisher. If the page numbers appear after the heading text, they might be preceded by characters called leaders, usually dots or periods, that run from the chapter or section titles on the opposite side of the page, or the page numbers might remain closer to the titles. In some cases, the page number appears before the text.
+
+If a book or document contains chapters, articles, or stories by different authors, their names usually appear in the table of contents.
+
+Matter preceding the table of contents is generally not listed there. However, all pages except the outside cover are counted, and the table of contents is often numbered with a lowercase Roman numeral page number. Many popular word processors, such as Microsoft Word, WordPerfect, and StarWriter are capable of automatically generating a table of contents if the author of the text uses specific styles for chapters, sections, subsections, etc.
+
+
+This section shows the syntax for inserting tables.
+
+The different examples are as follows.
+
+
+
+\begin{table}[h]
+	\centering
+		\begin{tabular}{c|c|c|c|}
+			val1 & val2 & val3 & val4 \\
+			10 & 10 & 30 & 40\\
+		\end{tabular}
+		\caption{This is a demo table1} 
+\end{table}
+
+
+
+
+
+\begin{table}[htbp]
+	\centering
+	\caption{This is a demo table2}
+		\begin{tabular}{|c|c|c|c|} \hline
+			val1 & val2 & val3 & val4 \\ \hline
+			10 & 10 & 30 & 40\\ \hline
+		\end{tabular}
+		 
+		\label{table1}
+\end{table}
+
+
+
+
+\begin{table}[htb]
+\caption{Proposed Range of distribution zones for different distribution patterns. $\mu_{ni}$ represents mean value of $i^{th}$ feature in distribution of healthy samples, $\sigma_{ni}$ represents the standard deviation. $\mu_{ai}$ and $\sigma_{ai}$  represent the same in PD samples.}
+	\centering
+		\begin{tabular} {c c c c c c }\hline
+				 			
+				Distribution  & Safe & Acceptable & Permissible & Unacceptable & Unsafe\\ 
+				Pattern & (Wi=00.1) & (Wi=0.1) & (Wi=1) & (Wi=10) & (Wi=100)\\ \hline
+				 & $\leq(\mu_{ni} - 2\sigma_{ni})$ & $(\mu_{ni} - 2\sigma_{ni})$ & $(\mu_{ni} - \sigma_{ni})$ & $(\mu_{ni} + \sigma_{ni})$ & $\geq (\mu_{ni} + 2\sigma_{ni})$ \\
+				1 &               & to           & to          & to          & \\
+				 &                & $(\mu_{ni} - \sigma_{ni})$  & $(\mu_{ni} + \sigma_{ni})$ & $(\mu_{ni} + 2\sigma_{ni})$ & \\ \hline
+				
+  &                & $\leq min_{ai}$ & $ min_{ai}$ & $\geq max_{ai}$ &  \\
+2 &        -       &                  &to           &                  & - \\
+	&                &                 & $max_{ai}$ &                   & \\ 
+
+	 &   & $\geq max_{ai}$  &  $max_{ai}$      & $\leq min_{ni} $ & \\ \hline 
+			
+		\end{tabular}
+	
+	\label{table3}
+\end{table}
+	
+		
+		
+		
+		
+		
+		
+		\begin{table}
+\caption{Regions of partitions and corresponding weightage factors.}
+\centering	 
+				{\begin{tabular} {c c c c }\hline
+				  %&\multicolumn{2}{|c|}{affiliation distance} \\ \cline{2-3}
+				& Region of & \multicolumn{2}{c} {Weightage factors for analysis based on} \\ \cline{3-4}
+				 & $T^k$ = ($\underline{T}_k$,$\overline{T}_k$) & Position & Content \\ \hline
+				Case 1 & $<Z_s$(pattern 1) or  & $W_1 = 0.1$ & $W_a = 1.0$   \\ %\hline
+					        &  $>Z_s$(pattern 4)      &              &               \\      
+			Case 2 & [$Z_s$ , $Z_a$](patterns 1 and 2) or    & $W_2 = 0.3$ & $W_b = 0.8$   \\%\hline
+				        & [$Z_a$ , $Z_s$](patterns 3 and 4)      &              &               \\      \hline     
+		\end{tabular}
+			}
+			
+			\label{table4}
+	\end{table}
+
+		
+		
+		
+	
+
+\section{Conclusion}
+
+In a conclusion paragraph, you summarize what you’ve written about in your paper. When you’re writing a good conclusion paragraph, you need to think about the main point that you want to get across and be sure it’s included. If you’ve already written a fabulous introductory paragraph, you can write something similar with different wording. Here are some points to remember:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
+
+
+
+
